@@ -1,0 +1,230 @@
+<html>
+<head>
+    <title>Latihan 2 Membuat Table Jurnal Ramadan</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 0.8; /* Mengatur jarak antar baris teks */
+            background-color: #fdf6e3;
+            padding: 50px; /* Memberi jarak antara tabel dengan pinggiran layar */
+        }
+
+        h1 {
+            text-align: center; 
+            background-color: #f5deb3; 
+            padding: 15px;
+            border-radius: 8px; /* Membuat sudut kotak judul menjadi melengkung/tumpul */
+            color: #5d4037;
+            border: 2px solid #d7ccc8; /* Memberikan garis pinggir tipis pada kotak judul */
+        }
+
+        .identity { 
+            font-weight: bold; /* Membuat teks Nama dan Kelas menjadi tebal. */
+            margin-bottom: 15px; /* Memberi jarak antara bagian identitas dengan tabel di bawahnya. */
+            color: #4e342e;
+        }
+
+        table {
+            width: 100%; /* Membuat tabel melebar mengikuti ukuran layar. */
+            border-collapse: collapse; /* Menyatukan garis border agar tidak terlihat dua garis. */
+            background-color: white;
+            
+        }
+
+        th, td {
+            border: 1px solid #8d6e63; /* Memberikan garis border tipis berwarna cokelat. */
+            padding: 12px; /* Memberi ruang di dalam sel agar teks tidak menempel ke garis. */
+            text-align: left;
+        }
+
+        /* Warna khusus kolom Hari */
+        th {
+            background-color: #d7ccc8;
+            color: #3e2723;
+            width: 100px; /* Mengunci lebar kolom hari agar konsisten (100 pixel). */
+            text-align: center; /* Khusus untuk "Hari", teks diletakkan di tengah sel. */
+            font-size: medium;
+
+        }
+
+        /* Warna khusus kolom kategori */
+        td:nth-child(2) {
+            background-color: #efebe9; /* Memberi warna latar (Menu Buka, Sahur, dll). */
+            font-weight: bold;
+            width: 150px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>AMALAN DAN DAFTAR MENU SELAMA IBADAH BULAN PUASA 1447H</h1>
+    
+    <div class="identity">
+        <p>NAMA  : Dhani Wira Saputra</p>
+        <p>KELAS : TI-2B</p>
+        <p>NIM   : 2507411020</p>
+    </div>
+
+    <table>
+        <tr>
+            <th rowspan="3">Hari 1</th>
+            <td>Menu Buka</td>
+            <td>Ayam Kecap</td>
+        </tr>
+        <tr>
+            <td>Menu Sahur</td>
+            <td>Soto Ayam</td>
+        </tr>
+        <tr>
+            <td>Amalan Baik</td>
+            <td>Memberi makan Kucing</td>
+        </tr>
+
+        <tr>
+            <th rowspan="3">Hari 2</th>
+            <td>Menu Buka</td>
+            <td>Bubur Kacang Hijau</td>
+        </tr>
+        <tr>
+            <td>Menu Sahur</td>
+            <td>Nasi Goreng</td>
+        </tr>
+        <tr>
+            <td>Amalan Baik</td>
+            <td>Sabar dan Bersyukur</td>
+        </tr>
+
+        <tr>
+            <th rowspan="3">Hari 3</th>
+            <td>Menu Buka</td>
+            <td>Es Dawet + gorengan</td>
+        </tr>
+        <tr>
+            <td>Menu Sahur</td>
+            <td>Nasi + Ikan Tongkol</td>
+        </tr>
+        <tr>
+            <td>Amalan Baik</td>
+            <td>Berprasangka Baik kepada tiap orang</td>
+        </tr>
+
+        <tr>
+            <th rowspan="3">Hari 4</th>
+            <td>Menu Buka</td>
+            <td>Opor Ayam</td>
+        </tr>
+        <tr>
+            <td>Menu Sahur</td>
+            <td>Bubur Ayam</td>
+        </tr>
+        <tr>
+            <td>Amalan Baik</td>
+            <td> Berinfak kepada orang yang membutuhkan</td>
+        </tr>
+
+        <tr>
+            <th rowspan="3">Hari 5</th>
+            <td>Menu Buka</td>
+            <td>Sate Padang</td>
+        </tr>
+        <tr>
+            <td>Menu Sahur</td>
+            <td>Cumi Cabe Ijo</td>
+        </tr>
+        <tr>
+            <td>Amalan Baik</td>
+            <td>Berbagi Takjil untuk Berbuka</td>
+        </tr>
+
+        <tr>
+            <th rowspan="3">Hari 6</th>
+            <td>Menu Buka</td>
+            <td>Nasi Padang</td>
+        </tr>
+        <tr>
+            <td>Menu Sahur</td>
+            <td>Mie Rebus Instan</td>
+        </tr>
+        <tr>
+            <td>Amalan Baik</td>
+            <td>Tadarrus Shubuh</td>
+        </tr>
+
+        <tr>
+            <th rowspan="3">Hari 7</th>
+            <td>Menu Buka</td>
+            <td>Risol Mayo, Dimsum Mentai</td>
+        </tr>
+        <tr>
+            <td>Menu Sahur</td>
+            <td>Bebek Bakar</td>
+        </tr>
+        <tr>
+            <td>Amalan Baik</td>
+            <td>Membantu Orang Tua</td>
+        </tr>
+
+        <tr>
+            <th rowspan="3">Hari 8</th>
+            <td>Menu Buka</td>
+            <td>Sup Jamur Enoki</td>
+        </tr>
+        <tr>
+            <td>Menu Sahur</td>
+            <td>Ayam Katsu</td>
+        </tr>
+        <tr>
+            <td>Amalan Baik</td>
+            <td>Berbagi Makanan Untuk Sahur</td>
+        </tr>
+
+        <tr>
+            <th rowspan="3">Hari 9</th>
+            <td>Menu Buka</td>
+            <td>Preksu Sambal Bakar</td>
+        </tr>
+        <tr>
+            <td>Menu Sahur</td>
+            <td>Ikan Goreng Asam Manis</td>
+        </tr>
+        <tr>
+            <td>Amalan Baik</td>
+            <td>Sedekah Shubuh</td>
+        </tr>
+
+        <tr>
+            <th rowspan="3">Hari 10</th>
+            <td>Menu Buka</td>
+            <td>Kepiting Bakar</td>
+        </tr>
+        <tr>
+            <td>Menu Sahur</td>
+            <td>Lobster Rebus</td>
+        </tr>
+        <tr>
+            <td>Amalan Baik</td>
+            <td>Traktir Temen Makan-Makan</td>
+        </tr>
+         <tr>
+            <td colspan="3" align="center" bgcolor="#f5deb3">
+                <font size="2"><i>Tabel amalan dan menu dalam 10 hari pertama Ramadan saya di perantauan</i></font>
+            </td>
+        </tr>
+    </table>
+
+    <h3><font color="#5d4037">Kesan dan Pesan:</font></h3>
+    <p>
+        <font size="2" color="#333">
+            <b>Kesan:</b> <br>
+            Menjalankan ibadah puasa tahun ini terasa sangat berkesan karena menu yang bervariasi dan ini pertama kalinya saya berpuasa di pulau orang yang jauh dari rumah.
+        </font>
+    </p>
+    <p>
+        <font size="2" color="#333">
+            <b>Pesan:</b> <br> 
+            Bersyukurlah Karena kita semua diberikan kekuatan untuk menyelesaikan puasa hingga hari raya ramadan dan tetap konsisten dalam berbuat baik kepada sesama makhluk ciptaan Allah SWT.
+        </font>
+    </p>
+</body>
+</html>

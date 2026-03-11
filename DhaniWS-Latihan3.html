@@ -1,0 +1,104 @@
+<html>
+<head>
+    <title>Halaman Latihan 3 HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6; /* Mengatur jarak (spasi)*/
+            margin: 20px auto; /*agar konten web terpusat di tengah layar*/
+            max-width: 900px; /*Ukuran max agar tidak berlebihan*/
+            padding: 20px; /* Memberi jarak ke dalam sebesar 20px agar tulisan tidak menempel*/;
+        }
+        .section { /* Memilih semua elemen HTML yang nantinya kita beri tanda class="section" */
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            text-align: justify;
+        }
+        /* Memberikan ruang ekstra agar halaman bisa di-scroll jauh ke bawah */
+        .spacer {
+            height: 100px;
+        }
+    </style>
+</head>
+<body id="atas">
+    <div>
+        <h5>
+            <p>Nama: Dhani Wira Saputra</p>
+            <p>NIM: 2507411020</p>
+            <p>Kelas: TI-2B</p>
+        </h5>
+    </div>
+    <hr>
+
+    <div class="section">
+        <h3>Halaman Bookmark Saya:</h3>
+        <ul>
+            <li><a href="#tugas1">1. Gambar dengan Tabel</a></li>
+            <li><a href="#tugas2">2. Image Map </a></li>
+            <li><a href="#tugas3">3. Hyperlink Target Bebas</a></li>
+            <li><a href="#berita1">4. Berita Perkembangan AI</a></li>
+            <li><a href="#berita2">5. Berita Inovasi Robotika</a></li>
+            <li><a href="#berita3">6. Berita Tren Web Development</a></li>
+        </ul>
+    </div>
+
+    <div id="tugas1" class="section">
+        <h2>1. Menyisipkan Gambar Menggunakan Tabel</h2>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="text-align: center;">
+            <tr>
+                <td width="50%">
+                    <img src="Image/015.jpg" alt="Foto 1" width="300">
+                </td>
+            </tr>
+            <tr>
+                <th>Gambar 1</th>
+            </tr>
+        </table>
+        <br><a href="#atas">^ Kembali ke Atas</a>
+    </div>
+
+    <div id="tugas2" class="section">
+        <h2>2. Membuat Image Map</h2>
+        <p>Klik sisi kiri atas gambar untuk ke Web PNJ, atau klik sisi lensa kamera untuk ke W3Schools.</p>
+        
+        <img src="Image/022.jpg" alt="Foto 2 Image Map" usemap="#navigasi_map" width="500" height="300">
+
+        <map name="navigasi_map">
+            <area shape="rect" coords="0,0,150,100" alt="Website PNJ" href="https://www.pnj.ac.id" target="_blank" title="Buka website PNJ">
+            <area shape="circle" coords="225,180,90" alt="Website W3Schools" href="https://www.w3schools.com" target="_blank" title="Buka website W3Schools">
+        </map>
+        <br><a href="#atas">^ Kembali ke Atas</a>
+    </div>
+
+    <div id="tugas3" class="section">
+        <h2>3. Hyperlink dengan Target Berbeda</h2>
+        <ul>
+            <li><a href="https://id.wikipedia.org/wiki/HTML" target="_blank">Belajar HTML di Wikipedia</a></li>
+            <li><a href="https://www.linkedin.com/in/dhani-wira-saputra-403722283/" target="_self"> Kunjungi Profil Linkedin Saya</a></li>
+            <li><a href="https://github.com/dhaniwira" target="_parent">Kunjungi GitHub Saya</a></li>
+        </ul>
+        <br><a href="#atas">^ Kembali ke Atas</a>
+    </div>
+
+    <div class="section">
+        <h2>4. Artikel Berita </h2>
+        
+        <h3 id="berita1">Berita 1: Perkembangan Artificial Intelligence (AI)</h3>
+        <p>Kecerdasan buatan atau AI terus mengalami perkembangan yang sangat pesat dalam beberapa tahun terakhir. Teknologi machine learning kini diterapkan dalam berbagai bidang, mulai dari pengolahan data medis hingga asisten virtual sehari-hari. Berbagai perusahaan teknologi besar berlomba-lomba untuk menciptakan model bahasa besar yang dapat membantu tugas-tugas kompleks manusia.</p>
+        <p>Dengan adanya AI, produktivitas diharapkan dapat meningkat tajam. Para pengembang peranti lunak kini mulai mengintegrasikan asisten AI langsung ke dalam editor kode mereka untuk membantu menulis dan mendeteksi bug pada program secara real-time.</p>
+        <br><a href="#atas">^ Kembali ke Atas</a>
+        
+        <div class="spacer"></div> <h3 id="berita2">Berita 2: Inovasi di Bidang Robotika Modern</h3>
+        <p>Dunia robotika semakin berfokus pada integrasi computer vision dan mekanika presisi tinggi. Saat ini, robot tidak hanya digunakan untuk jalur perakitan di pabrik otomotif, tetapi juga mulai merambah ke operasi medis mikro dan eksplorasi lingkungan yang berbahaya bagi manusia.</p>
+        <p>Sistem sensor yang semakin murah namun canggih memungkinkan robot otonom untuk memetakan ruang fisik dalam bentuk 3D secara langsung. Hal ini membuka peluang bagi para peneliti dan mahasiswa teknik untuk bereksperimen dengan desain rover atau drone pintar.</p>
+        <br><a href="#atas">^ Kembali ke Atas</a>
+
+        <div class="spacer"></div> <h3 id="berita3">Berita 3: Tren Web Development Masa Depan</h3>
+        <p>Dalam dunia pemrograman web, pemisahan antara frontend dan backend semakin jelas dengan arsitektur microservices dan serverless. Penggunaan framework modern membuat proses pembuatan situs web menjadi jauh lebih cepat dan interaktif.</p>
+        <p>Kinerja, aksesibilitas, dan keamanan menjadi fokus utama. Pengembang web masa kini sangat memperhatikan optimasi aset, seperti format gambar yang efisien, serta tata letak responsif yang memastikan situs dapat diakses dengan baik dari perangkat seluler maupun komputer desktop.</p>
+        <br><a href="#atas">^ Kembali ke Atas</a>
+    </div>
+
+</body>
+</html>
