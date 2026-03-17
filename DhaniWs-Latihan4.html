@@ -1,0 +1,172 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Form Pendaftaran Lomba Robotik</title> 
+        <style>
+        /* Mengatur gaya dasar untuk seluruh halaman web (body) */
+        body {
+            font-family: Arial, sans-serif; /* Menggunakan font Arial atau sans-serif */
+            background-color: #2d89a0; /* Memberikan warna latar belakang */
+            color: #333; /* Mengatur warna teks utama menjadi abu-abu gelap (hampir hitam) */
+        }
+        
+        /* Mengatur kotak putih utama yang akan membungkus form */
+        .container {
+            width: 600px; /* Lebar kotak diatur tetap 600 pixel */
+            margin: 40px auto; /* Margin atas-bawah 40px, kiri-kanan 'auto' agar kotak berada persis di tengah layar */
+            background-color: #ffffff; /* Warna latar belakang kotak adalah putih */
+            padding: 30px; /* Memberikan jarak ruang kosong di dalam kotak sebesar 30px */
+            border-radius: 10px; /* Membuat sudut kotak menjadi melengkung/tidak lancip */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Menambahkan efek bayangan halus agar kotak terlihat timbul */
+        }
+
+        /* Mengatur teks judul <h2> */
+        h2 {
+            text-align: center; /* Posisi teks di tengah */
+            color: #0056b3; /* Warna teks biru gelap */
+            margin-bottom: 5px; /* Jarak bawah judul dengan elemen di bawahnya */
+        }
+
+        /* Mengatur tata letak tabel pembantu */
+        table {
+            width: 100%; /* Tabel memenuhi 100% lebar kotak container */
+            margin-top: 20px; /* Jarak atas tabel */
+        }
+        
+        /* Mengatur setiap kolom (sel) di dalam tabel */
+        td {
+            padding: 8px 0; /* Jarak atas-bawah 8px di dalam sel agar teks/inputan tidak berdempetan */
+            vertical-align: top; /* Memastikan isi sel rata atas */
+        }
+
+        /* Mengatur tampilan kotak input teks, dropdown (select), dan area teks panjang (textarea) */
+        input[type="text"], select, textarea {
+            width: 95%; /* Kotak input memenuhi 95% ruang sel */
+            padding: 8px; /* Ruang kosong di dalam kotak input agar teks tidak menempel ke garis */
+            border: 1px solid #ccc; /* Garis pinggir kotak berwarna abu-abu tipis */
+            border-radius: 5px; /* Sudut kotak input melengkung sedikit */
+        }
+
+        /* Mengatur tampilan tombol dasar */
+        .btn {
+            padding: 10px 20px; /* Ukuran tombol (atas-bawah 10px, kiri-kanan 20px) */
+            border: none; /* Menghilangkan garis pinggir bawaan tombol */
+            border-radius: 5px; /* Sudut tombol melengkung */
+            color: white; /* Teks di dalam tombol berwarna putih */
+            cursor: pointer; /* Mengubah kursor mouse menjadi gambar tangan saat menunjuk tombol */
+            font-weight: bold; /* Teks di dalam tombol dicetak tebal */
+        }
+        
+        /* Warna spesifik untuk tombol submit dan reset */
+        .btn-submit { background-color: #2aa947; } /* Tombol kirim berwarna hijau */
+        .btn-reset { background-color: #dc3545; } /* Tombol kosongkan berwarna merah */
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div style="text-align: center;"> 
+            <svg width="80" height="80"> <circle cx="40" cy="40" r="35" stroke="#0056b3" stroke-width="3" fill="#eef2f3" />
+                <text x="50%" y="50%" text-anchor="middle" dy=".3em" font-weight="bold" fill="#0056b3">PNJ</text>
+            </svg>
+        </div>
+
+        <h2>Form Pendaftaran Lomba Robotik</h2>
+        <p style="text-align: center; font-size: 14px; color: #666;">Lomba Robotik Tingkat Prodi TIK</p>
+
+        <form action="#" method="POST">
+            
+            <table>
+                <tr>
+                    <td width="30%"><strong>Nama Lengkap</strong></td>
+                    <td width="5%">:</td> <td><input type="text" name="nama" placeholder="Masukkan nama kamu" required></td>
+                </tr>
+                
+                <tr>
+                    <td><strong>NIM</strong></td>
+                    <td>:</td>
+                    <td><input type="text" name="nim" placeholder="Contoh: 2507411020" required></td>
+                </tr>
+                
+                <tr>
+                    <td><strong>Jenis Kelamin</strong></td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="gender" value="Pria"> Pria 
+                        <input type="radio" name="gender" value="Wanita"> Wanita
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Program Studi</strong></td>
+                    <td>:</td>
+                    <td>
+                        <select name="prodi">
+                            <option value="">-- Pilih Prodi --</option>
+                            <option value="TI">Teknik Informatika</option>
+                            <option value="TMJ">Teknik Multimedia Jaringan</option>
+                            <option value="TMD">Teknik Multimedia Digital</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Minat Divisi</strong></td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="minat" value="Lf"> Line Follower <br> <input type="checkbox" name="minat" value="RoboticsAI"> Robotics & AI<br>
+                        <input type="checkbox" name="minat" value="IoT"> Internet of Things<br> <input type="checkbox" name="minat" value="Drone"> Drone
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Alasan Bergabung</strong></td>
+                    <td>:</td>
+                    <td>
+                        <textarea name="alasan" rows="4" placeholder="Motivasi bergabung dalam lomba ini.."></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" style="text-align: center; padding-top: 20px;">
+                        <button type="submit" class="btn btn-submit">Kirim Formulir</button>
+                        <button type="reset" class="btn btn-reset">Kosongkan</button>
+                    </td>
+                </tr>
+            </table>
+        </form> <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ccc;">
+
+        <div style="text-align: center;">
+            <p><strong>Preview tanda peserta (canvas)</strong></p>
+            <canvas id="kartuCanvas" width="300" height="150" style="border:1px solid #0056b3; border-radius: 8px;"></canvas>
+        </div>
+
+    </div> 
+    <script>
+        // Mencari elemen canvas di HTML berdasarkan ID "kartuCanvas"
+        var canvas = document.getElementById("kartuCanvas");
+        // Mengatur konteks gambar menjadi 2 Dimensi (2d)
+        var ctx = canvas.getContext("2d");
+
+        // 1. Mewarnai latar belakang kanvas menjadi abu-abu sangat muda
+        ctx.fillStyle = "#f8f9fa"; 
+        // Menggambar bentuk kotak (titik x=0, titik y=0, lebar=300, tinggi=150)
+        ctx.fillRect(0, 0, 300, 150);
+
+        // 2. Membuat kotak hiasan biru di bagian atas (sebagai header kartu)
+        ctx.fillStyle = "#0056b3"; // Ganti warna kuas jadi biru
+        // Menggambar kotak (x=0, y=0, lebar=300, tinggi=40)
+        ctx.fillRect(0, 0, 300, 40);
+
+        // 3. Menulis teks warna putih di atas kotak biru header
+        ctx.fillStyle = "white"; // Warna teks putih
+        ctx.font = "bold 16px Arial"; // Ukuran dan jenis font
+        // Perintah menulis teks: isi tulisan, posisi X (kiri), posisi Y (atas)
+        ctx.fillText("KARTU CALON ANGGOTA", 50, 25);
+
+        // 4. Menulis teks utama berwarna hitam di bagian tengah kartu
+        ctx.fillStyle = "black"; // Warna teks hitam
+        ctx.font = "14px Arial"; 
+        ctx.fillText("Peserta Robotik 2026", 80, 70);
+    </script>
+</body> 
+</html>
