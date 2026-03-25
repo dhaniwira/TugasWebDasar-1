@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style-latihan5.css"> <!-- Menghubungkan file CSS eksternal untuk styling tambahan -->
+    <style> /* internal CSS Digunakan untuk styling dasar elemen seperti body dan header */
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif; /* mengubah jenis huruf */
+            background-color: #6d98c4; /* warna latar belakang */
+            margin: 0; /* menghilangkan margin default untuk body */
+        }
+
+        /* flexbox untuk mengatur tata letak Header/Navbar */
+        header {
+            display: flex; /* Mengaktifkan Flexbox */
+            justify-content: space-between; /* Mendorong teks ke kiri, tombol ke kanan */
+            align-items: center; /* Menyelaraskan elemen secara vertikal di tengah */
+            padding: 20px 40px; /* memberikan ruang di dalam header */
+            background-color: #2c3e50; /* warna latar belakang header */
+            color: white;  /* warna teks header */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* bayangan halus untuk memberikan kedalaman */
+        }
+    </style>
+</head>
+<body> 
+    <header>
+        <h2>Portofolio Dhani untuk Latihan 5 CSS </h2>
+        <button style="background-color: #3498db; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" 
+            onclick="alert('Data diri saya\n\nNama: Dhani Wira Saputra\nNo Wa: 089525244866\nNIM: 2507411020\nProgram Studi: Teknik Informatika\nKampus: Politeknik Negeri Jakarta')">Hubungi Saya
+        </button> 
+    </header>
+
+    <div class="list-container">
+        <ul class="project-list">
+            <li>
+                <strong>Proyek Web Development</strong>
+                <p>Membuat halaman web responsif dan interaktif untuk latihan CSS.</p>
+            </li>
+            <li>
+                <strong>Proyek Machine Learning</strong>
+                <p>Implementasi algoritma cerdas untuk pengolahan data.</p>
+            </li>
+            <li>
+                <strong>Sistem Robotika</strong>
+                <p>Pengembangan mikrokontroler dalam pembuatan alat kotak sampah pintar MAN 1 Metro.</p>
+            </li>
+            <li>
+                <strong>Pemrograman Dasar</strong>
+                <p>Eksplorasi logika dan struktur data pemrograman.</p>
+            </li>
+            <li>
+                <strong>Pengembangan AI</strong>
+                <p>Pembuatan asisten cerdas berbasis teks.</p>
+            </li>
+            </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* File: style-latihan6.css */ 
+/* Grid untuk membuat wadah daftar list menurun ke bawah */
+.list-container {
+    display: grid; /* Mengaktifkan Grid Layout */
+    grid-template-columns: 1fr; /* Menggunakan 1 kolom penuh dari kiri ke kanan */
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Mengatur gaya dasar elemen list <ul> */
+.project-list {
+    list-style-type: none; /* Menghilangkan titik (bullet) bawaan HTML */
+    padding: 0;
+    margin: 0;
+    
+    display: grid; /* Menggunakan Grid untuk mengatur jarak antar baris */
+    gap: 15px; /* Jarak antar baris proyek */
+}
+
+/* Desain untuk setiap baris proyek (elemen <li>) */
+.project-list li {
+    background-color: white; /* [CSS Basic 1]: Warna latar baris */
+    padding: 20px; /* [CSS Basic 2]: Jarak ke dalam */
+    border-radius: 8px; /* [CSS Basic 3]: Sudut melengkung */
+    border-left: 6px solid #3498db; /* Garis aksen biru di sebelah kiri */
+    
+    /* [CSS Advanced 1]: box-shadow untuk bayangan tipis di setiap baris */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    
+    /* [CSS Advanced 2]: transition untuk efek pergerakan yang halus */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Teks Judul Proyek */
+.project-list li strong {
+    font-size: 18px; /* [CSS Basic 4]: Ukuran huruf */
+    color: #2c3e50; /* [CSS Basic 5]: Warna teks */
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Teks Deskripsi Proyek */
+.project-list li p {
+    margin: 0;
+    color: #555;
+}
+
+/* [CSS Advanced 3]: transform (Efek saat baris disorot oleh kursor mouse) */
+.project-list li:hover {
+    transform: translateX(10px); /* Baris akan bergeser ke kanan sedikit */
+    background-color: #f1f8ff; /* Warna latar berubah menjadi biru sangat muda */
+}
+
+/* ==========================================
+   [RESPONSIVE]: Menggunakan Media Query
+   ========================================== */
+/* Aturan ini otomatis aktif jika dibuka di layar HP (lebar maksimal 768px) */
+@media screen and (max-width: 768px) {
+    .list-container {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+    
+    /* Menyesuaikan [FLEXBOX] di header HTML agar bertumpuk rapi di HP */
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
